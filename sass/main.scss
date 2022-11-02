@@ -1,3 +1,4 @@
+@import 'block/font.scss';
 @import 'block/color.scss';
 
 *, *:after, *:before { 
@@ -22,6 +23,7 @@ html {
 body {
     background-color: $background;
     color: $main-color;
+    font-family: 'Source Code Pro'; 
     transition: 0.8s;
 }
 
@@ -32,6 +34,7 @@ body {
 a {
     text-decoration: none;
     transition: 0.9s;
+    color: $main-color;
 }
 
 .btn-reset {
@@ -52,6 +55,21 @@ ul {
     list-style-type: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.com-color {
+    color: $complementary-color;
+}
+
+.btn {
+    border: 1px solid #C778DD;
+}
+.btn:hover {
+    background: rgba(199, 120, 221, 0.2);
+}
+
 .wrapper {
     min-height: 100px;
     overflow: hidden;
@@ -64,4 +82,5 @@ ul {
 }
 
 @import 'block/header.scss';
+@import 'block/content.scss';
 @import 'block/footer.scss';

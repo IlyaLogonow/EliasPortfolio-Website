@@ -1,0 +1,35 @@
+@font-face { 
+    font-family: 'Source Code Pro'; 
+    src: url('/font/SourceCodePro-Regular.eot');                                    
+    src: url('/font/SourceCodePro-Regular.eot?#iefix') format('Source Code Pro'), 
+         url('/font/SourceCodePro-Regular.woff2') format('woff2'),                   
+         url('/font/SourceCodePro-Regular.woff') format('woff'),                    
+         url('/font/SourceCodePro-Regular.ttf')  format('truetype'),                
+         url('/font/SourceCodePro-Regular.svg#svgFontName') format('svg');          
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Source Code Pro'; 
+    src: url('/font/SourceCodePro-Medium.eot');                                    
+    src: url('/font/SourceCodePro-Medium.eot?#iefix') format('Source Code Pro'), 
+         url('/font/SourceCodePro-Medium.woff2') format('woff2'),                   
+         url('/font/SourceCodePro-Medium.woff') format('woff'),                    
+         url('/font/SourceCodePro-Medium.ttf')  format('truetype'),                
+         url('/font/SourceCodePro-Medium.svg#svgFontName') format('svg');          
+    font-weight: 500; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Source Code Pro'; 
+    src: url('/font/SourceCodePro-Bold.eot');                                    
+    src: url('/font/SourceCodePro-Bold.eot?#iefix') format('Source Code Pro'), 
+         url('/font/SourceCodePro-Bold.woff2') format('woff2'),                   
+         url('/font/SourceCodePro-Bold.woff') format('woff'),                    
+         url('/font/SourceCodePro-Bold.ttf')  format('truetype'),                
+         url('/font/SourceCodePro-Bold.svg#svgFontName') format('svg');          
+    font-weight: 600; 
+    font-style: normal; 
+}

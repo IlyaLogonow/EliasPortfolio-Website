@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
@@ -23,16 +23,29 @@
                   <li class="main-nav__item"><a class="main-nav__link" href="#"> <span>#</span>contacts</a></li>
                 </ul>
               </nav>
-              <div class="accordion">
-                <ul class="accordion__list">
-                  <li class="accordion__item">EN</li>
-                </ul>
+              <div class="dropdown">
+                <div class="dropbtn">EN</div>
+                <div class="dropdown-content"> <a href="#">RU</a><a href="#">EN</a></div>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <main></main>
+      <main class="content">
+        <div class="container">
+          <div class="hero"> 
+            <div class="hero__content">
+              <h1 class="hidden">Portfolio</h1>
+              <h2 class="hero__title">Elias is a <span class="com-color">web designer </span>and <span class="com-color">front-end developer</span></h2>
+              <p class="hero__text">He crafts responsive websites where technologies meet creativity</p><a class="hero__link btn" href="#">Contact me!!</a>
+            </div>
+            <div class="hero__portfolio-info">
+              <p>Currently working on <span>Portfolio</span></p>
+            </div>
+            <div class="hero__bg-art"></div>
+          </div>
+        </div>
+      </main>
       <footer></footer>
     </div>
   </body>
