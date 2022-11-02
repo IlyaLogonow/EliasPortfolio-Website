@@ -1,0 +1,67 @@
+@import 'block/color.scss';
+
+*, *:after, *:before { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a:active, a:focus { 
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    color: $main-color;
+    transition: 0.8s;
+}
+
+.visibility-hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit; 
+    margin: 0; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
+
+@import 'block/header.scss';
+@import 'block/footer.scss';

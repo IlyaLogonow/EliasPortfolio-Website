@@ -1,0 +1,53 @@
+/*HEADER*/
+
+.header {
+    min-height: 61px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    min-height: 61px;
+}
+
+.logo {
+    width: 72px;
+    height: 21px;
+}
+
+.nav__row {
+    display: flex;
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__item {
+    margin-right: 32px;
+}
+
+.main-nav__item span {
+    color: $complementary-color;
+}
+
+.main-nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $main-color;
+}
+
+.main-nav__link:hover {
+    color: $hover-color;
+}
+
+.accordion__item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/*HEADER-END*/
