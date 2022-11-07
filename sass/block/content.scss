@@ -1,5 +1,6 @@
 /*CONTENT*/
 .hero {
+    z-index: -1;
     display: flex;
     min-height: 423px;
     position: relative;
@@ -75,5 +76,38 @@
 
 .hero__portfolio-info span {
     color: $main-color;
+}
+
+@media screen and (max-width: 1020px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 423px;
+        position: relative;
+    }
+
+    .hero__content {
+        margin-bottom: 284px;
+    }
+
+    .hero__portfolio-info {
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+
+    .hero__bg-art {
+        position: absolute;
+        top: 310px;
+        left: 0px;
+        width: 316px;
+        height: 260.08px;
+        background: url('/img/media-man.png') no-repeat center;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hero__title {
+        max-width: 328px;
+    }
 }
 /*CONTENT-END*/
