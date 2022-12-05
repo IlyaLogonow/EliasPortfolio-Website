@@ -5,6 +5,12 @@
     margin-bottom: 62px;
 }
 
+@media screen and (max-width: 1000px) {
+    .header {
+        margin-bottom: 24px;
+    }
+}
+
 .header__row {
     display: flex;
     justify-content: space-between;

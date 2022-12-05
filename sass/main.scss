@@ -67,7 +67,7 @@ ul {
     border: 1px solid #C778DD;
 }
 .btn:hover {
-    background: rgba(199, 120, 221, 0.2);
+    background: #C778DD;
 }
 
 .wrapper {
@@ -79,6 +79,25 @@ ul {
     max-width: 1054px;
     padding: 0 15px;
     margin: 0px auto;
+}
+
+.link-arrow {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    border: 1px solid $complementary-color;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+.link-arrow::after {
+    content: "<~>";
+    display: inline-block;
+    margin-left: 12px
+}
+.link-arrow:hover,
+.link-arrow:active,
+.link-arrow:focus {
+    background: rgba(199, 120, 221, 0.2);
 }
 
 @import 'block/header.scss';

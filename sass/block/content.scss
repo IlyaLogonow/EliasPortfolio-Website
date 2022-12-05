@@ -1,9 +1,13 @@
-/*CONTENT*/
+/*HERO*/
+.container {
+    position: relative;    
+}
+
 .hero {
-    z-index: -1;
     display: flex;
     min-height: 423px;
     position: relative;
+    margin-bottom: 200px;
 }
 
 .hero__content {
@@ -71,7 +75,7 @@
     margin: auto;
     width: 16px;
     height: 16px;
-    background: #C778DD;
+    background: $complementary-color;
 }
 
 .hero__portfolio-info span {
@@ -109,5 +113,144 @@
     .hero__title {
         max-width: 328px;
     }
+    .hero__bg-art {
+        top: 390px;
+    }
+    .hero__text {
+        max-width: 328px;
+    }
 }
-/*CONTENT-END*/
+/*HERO-END*/
+
+/*PROJECTS*/ 
+.projects {
+    position: relative;
+    min-height: 608px;
+    margin-bottom: 106px; 
+}
+
+.projects__title-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63.64px;
+}
+
+.projects__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.projects__title span {
+    color: $complementary-color;
+}
+
+.projects__title:after {
+    content: '';
+    display: inline-block;
+    width: 511px;
+    border-top: 2px solid $complementary-color;
+    margin-left: 16px;
+}
+
+.projects__link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+.projects__link::after {
+    content: '~~>';
+    display: inline-block;
+    margin-left: 12px;
+}
+.projects__link:hover,
+.projects__link:focus,
+.projects__link:active {
+    color: $complementary-color;
+}
+
+.projects__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-cart {
+    max-width: 335px;
+    border: 1px solid $hover-color;
+    min-height: 391px;
+    cursor: pointer;
+}
+.projects-cart:hover {
+    border: 1px solid $complementary-color;
+}
+
+.projects-cart__img{
+    transition: 0.8s;
+}
+.projects-cart__img:hover {
+    transform: scale(1.1);
+}
+
+.projects-cart__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.projects-cart__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+}
+.projects-cart__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-cart__inf {
+    border-top: 1px solid $hover-color;
+    padding: 16px;
+}
+
+.projects-cart__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 16px;
+}
+.projects-cart__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+    margin-bottom: 16px;
+}
+
+/*projects__rear-details*/
+.rear-details {
+    position: absolute;
+    border: 1px solid #ABB2BF;
+}
+.projects__rear-details-one {
+    width: 91px;
+    height: 91px;
+    left: 1280px;
+    top: 550px;
+}
+.projects__rear-details-two {
+    width: 155px;
+    height: 155px;
+    left: 1294px;
+    top: 1128px;
+}
+.projects__rear-details-three{
+    width: 84px;
+    height: 84px;
+    left: -360px;
+    top: 923px;
+}
+/*projects__rear-details-end*/
+/*PROJECTS*/ 
