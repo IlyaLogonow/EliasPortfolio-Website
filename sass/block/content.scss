@@ -88,6 +88,7 @@
         flex-direction: column;
         min-height: 423px;
         position: relative;
+        margin-bottom: 150px;
     }
 
     .hero__content {
@@ -132,25 +133,8 @@
 .projects__title-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 63.64px;
-}
-
-.projects__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.projects__title span {
-    color: $complementary-color;
-}
-
-.projects__title:after {
-    content: '';
-    display: inline-block;
-    width: 511px;
-    border-top: 2px solid $complementary-color;
-    margin-left: 16px;
 }
 
 .projects__link {
@@ -229,6 +213,26 @@
     margin-bottom: 16px;
 }
 
+/*projects-MEDIA*/
+@media screen and (max-width: 1020px) {
+    .projects__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projects-cart:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 850px) {
+        .projects__title:after {
+            display: none;
+        }
+    }
+}
+/*projects-MEDIA-END*/
+
 /*projects__rear-details*/
 .rear-details {
     position: absolute;
@@ -253,4 +257,138 @@
     top: 923px;
 }
 /*projects__rear-details-end*/
-/*PROJECTS*/ 
+/*PROJECTS-END*/ 
+
+/*SKILLS*/
+.skills {
+    position: relative;
+    min-height: 365px;
+    margin-bottom: 112px;
+}
+
+.skills__title {
+    margin-bottom: 43px;
+}
+
+.skills__info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills__info-cart {
+    border: 1px solid $hover-color;
+    max-width: 200px;
+}
+
+.skills__info-bloc:not(:last-child) {
+    margin-right: 16px;
+}
+
+.skills__info-cart:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.skills__info-cart h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px;
+}
+.skills__info-cart ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid $hover-color; 
+    padding: 8px;
+}
+.skills__info-cart li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+    margin: 3px;
+}
+
+.skills-rear-details {
+    position: absolute;
+    top: 54px;
+    left: 32px;
+    background: url('/img/skills-rear-details.svg');
+    width: 349px;
+    height: 283px;
+}
+
+/*skills-MEDIA*/
+@media screen and (max-width: 1020px) {
+    .skills-rear-details {
+        display: none;
+    }
+
+    .skills__info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skills__info {
+        flex-direction: column;
+    }
+
+    .skills__info-cart {
+        margin-bottom: 15px;
+    }
+}
+/*skills-MEDIA-END*/
+/*SKILLS-END*/
+
+
+/*ABOUT-ME*/
+.about-me {
+    min-height: 508px;
+    margin-bottom: 112px;
+}
+
+.about-me__title {
+    margin-bottom: 48px;
+}
+
+.about-me__inf {
+    max-width: 515px;
+}
+
+.about-me__inf p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+}
+.about-me__inf p {
+    margin-bottom: 25px;
+}
+
+.about-me__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    border: 1px solid #C778DD;
+    padding: 8px 16px;
+}
+.about-me__link:hover,
+.about-me__link:focus,
+.about-me__link:active {
+    background: #C778DD;
+}
+
+.about-me__link::after {
+    content: "->";
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+
+/*ABOUT-ME-END*/

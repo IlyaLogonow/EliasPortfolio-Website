@@ -100,6 +100,24 @@ ul {
     background: rgba(199, 120, 221, 0.2);
 }
 
+.section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.section-title span {
+    color: $complementary-color;
+}
+
+.section-title:after {
+    content: '';
+    display: inline-block;
+    width: 511px;
+    border-top: 2px solid $complementary-color;
+    margin-left: 16px;
+}
+
 @import 'block/header.scss';
 @import 'block/content.scss';
 @import 'block/footer.scss';
