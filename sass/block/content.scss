@@ -348,6 +348,7 @@
 
 /*ABOUT-ME*/
 .about-me {
+    position: relative;
     min-height: 508px;
     margin-bottom: 112px;
 }
@@ -360,12 +361,6 @@
     max-width: 515px;
 }
 
-.about-me__inf p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: $hover-color;
-}
 .about-me__inf p {
     margin-bottom: 25px;
 }
@@ -389,6 +384,93 @@
     margin-left: 10px;
 }
 
+.about-me__rear-details {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('/img/about-me-man.png');
+    width: 339px;
+    height: 507px;
+}
 
+/*about-me__rear-details*/
+.about-me__rear-details-one {
+    width: 155px;
+    height: 155px;
+    right: 1294px;
+    top: 2000px;
+}
+.about-me__rear-details-two {
+    width: 155px;
+    height: 155px;
+    left: 1294px;
+    top: 2150px;
+}
+/*about-me__rear-details*/
 
 /*ABOUT-ME-END*/
+
+/*CONTACTS*/
+.contacts {
+    min-height: 228px;
+    margin-bottom: 131px;
+}
+
+.contacts__title {
+    margin-bottom: 45px;
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__info {
+    max-width: 505px;
+}
+
+.contacts__message {
+    border: 1px solid $hover-color;
+    min-width: 204px;
+    min-height: 141px;
+    h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+}
+
+.contacts__message-content {
+    padding: 16px;
+}
+
+.message__icon {
+    display: flex;
+    align-items: center;
+    width: 143px;
+    height: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+}
+.message__icon:not(:last-child) {
+    margin-bottom: 8px;
+}
+.message__icon:last-child{
+    margin-bottom: 2px;
+}
+
+.message-ds::before {
+    content: url('/img/Discord.svg'); 
+    margin-right: 5px;
+}
+.message-mail::before {
+    content: url('/img/Email.svg'); 
+    margin-right: 5px; 
+}
+/*CONTACTS-END*/

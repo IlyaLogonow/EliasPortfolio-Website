@@ -118,6 +118,13 @@ ul {
     margin-left: 16px;
 }
 
+.p-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hover-color;
+}   
+
 @import 'block/header.scss';
 @import 'block/content.scss';
 @import 'block/footer.scss';
