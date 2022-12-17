@@ -393,6 +393,12 @@
     height: 507px;
 }
 
+@media screen and (max-width: 835px) {
+    .about-me__rear-details {
+        display: none;
+    }
+}
+
 /*about-me__rear-details*/
 .about-me__rear-details-one {
     width: 155px;
@@ -428,6 +434,7 @@
 
 .contacts__info {
     max-width: 505px;
+    margin-bottom: 30px;
 }
 
 .contacts__message {
@@ -473,4 +480,5 @@
     content: url('/img/Email.svg'); 
     margin-right: 5px; 
 }
+
 /*CONTACTS-END*/
