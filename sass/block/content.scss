@@ -159,6 +159,8 @@
 .projects__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .projects-cart {
@@ -166,6 +168,7 @@
     border: 1px solid $hover-color;
     min-height: 391px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .projects-cart:hover {
     border: 1px solid $complementary-color;

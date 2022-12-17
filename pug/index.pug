@@ -1,6 +1,37 @@
 extends layout/app
 
 block index 
-    include chunk/header.pug
+    header.header
+        .container
+            .header__row
+                img.logo(src="img/logo.svg", alt="logo")  
+                .nav__row
+                    .hamburger-menu
+                        input.hidden(id="menu__toggle" type="checkbox")
+                        label.menu__btn(for="menu__toggle")
+                            span
+                        nav.main-nav.menu__box
+                            ul.main-nav__list
+                                li.main-nav__item
+                                    a.main-nav__link.menu__item.active-link(href="index.html") 
+                                        span #
+                                        |home
+                                li.main-nav__item
+                                    a.main-nav__link.menu__item(href="#") 
+                                        span #
+                                        |works
+                                li.main-nav__item
+                                    a.main-nav__link.menu__item(href="#") 
+                                        span #
+                                        |about-me
+                                li.main-nav__item
+                                    a.main-nav__link.menu__item(href="#") 
+                                        span #
+                                        |contacts
+                        .dropdown
+                            .dropbtn EN
+                            .dropdown-content 
+                                a(href="#") RU
+                                a(href="#") EN
     include chunk/main-content.pug
     include chunk/footer.pug

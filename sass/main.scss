@@ -125,6 +125,10 @@ ul {
     color: $hover-color;
 }   
 
+.active-link{
+    color: $hover-color !important;
+}
+
 @import 'block/header.scss';
 @import 'block/content.scss';
 @import 'block/footer.scss';
