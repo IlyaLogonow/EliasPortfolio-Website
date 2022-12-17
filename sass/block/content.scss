@@ -45,7 +45,7 @@
     right: 0px;
     width: 469px;
     height: 386px;
-    background: url('/img/man.png') no-repeat center;
+    background: url('../img/man.png') no-repeat center;
 }
 
 .hero__portfolio-info {
@@ -106,7 +106,7 @@
         left: 0px;
         width: 316px;
         height: 260.08px;
-        background: url('/img/media-man.png') no-repeat center;
+        background: url('../img/media-man.png') no-repeat center;
     }
 }
 
@@ -312,7 +312,7 @@
     position: absolute;
     top: 54px;
     left: 32px;
-    background: url('/img/skills-rear-details.svg');
+    background: url('../img/skills-rear-details.svg');
     width: 349px;
     height: 283px;
 }
@@ -388,7 +388,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    background: url('/img/about-me-man.png');
+    background: url('../img/about-me-man.png');
     width: 339px;
     height: 507px;
 }
@@ -473,11 +473,11 @@
 }
 
 .message-ds::before {
-    content: url('/img/Discord.svg'); 
+    content: url('../img/Discord.svg'); 
     margin-right: 5px;
 }
 .message-mail::before {
-    content: url('/img/Email.svg'); 
+    content: url('../img/Email.svg'); 
     margin-right: 5px; 
 }
 
