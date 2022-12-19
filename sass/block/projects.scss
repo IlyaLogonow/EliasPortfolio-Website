@@ -1,0 +1,65 @@
+/*PROJECTS*/
+.projects-title {
+    margin-bottom: 68px;
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+
+    span {
+        color: $complementary-color;
+    }
+}
+
+.projects-title {
+    h1 {
+        margin-bottom: 14px;
+    }
+}
+
+.projects-span {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/*complete-apps*/
+.complete-apps {
+    min-height: 919px;
+    margin-bottom: 81px;
+}
+
+.complete-apps__title {
+    margin-bottom: 48px;
+}
+
+.projects__row--not-flex {
+    display: flex;
+    justify-content: flex-start;
+
+    .projects-cart {
+        margin-right: 10px;
+    }
+}
+/*complete-apps-END*/
+
+
+/*small-projects*/
+.small-projects {
+    min-height: 828px;
+    margin-bottom: 173px ;
+}
+
+.small-projects__title {
+    margin-bottom: 48px;
+}
+
+.small-projects__cart {
+    min-height: 232px;
+}
+
+/*small-projects-END*/
+
+
+/*PROJECTS-END*/
