@@ -1,0 +1,50 @@
+/*about-me*/
+
+.about-me__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-skills {
+    margin-bottom: 0px;
+}
+
+/*about-me-END*/
+
+/*facts*/
+.facts {
+    position: relative;
+    margin-bottom: 148px;
+}
+
+.facts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 624px;
+    
+    p {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 21px;
+        color: $hover-color;
+        padding: 8px;
+        margin-bottom: 16px;
+
+        border: 1px solid $hover-color;
+    }
+
+    p:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.facts__rear-details {
+    position: absolute;
+    top: 68px;
+    right: 0px;
+    background: url('../img/my-fun-facts-group.svg');
+    width: 178px;
+    height: 170px;
+}
+
+/*facts-END*/

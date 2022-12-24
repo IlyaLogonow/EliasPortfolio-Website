@@ -13,7 +13,7 @@ block index
                         nav.main-nav.menu__box
                             ul.main-nav__list
                                 li.main-nav__item
-                                    a.main-nav__link.menu__item.active-link(href="index.html") 
+                                    a.main-nav__link.menu__item(href="index.html") 
                                         span #
                                         |home
                                 li.main-nav__item
@@ -21,7 +21,7 @@ block index
                                         span #
                                         |works
                                 li.main-nav__item
-                                    a.main-nav__link.menu__item(href="about-me.html") 
+                                    a.main-nav__link.menu__item.active-link(href="about-me.html") 
                                         span #
                                         |about-me
                                 li.main-nav__item
@@ -33,5 +33,6 @@ block index
                             .dropdown-content 
                                 a(href="#") RU
                                 a(href="#") EN
-    include chunk/main-content.pug
+    include chunk/about-me.pug
     include chunk/footer.pug
+    
