@@ -1,8 +1,26 @@
 /*about-me*/
+.about-me-content {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 830px) {
+    .about-me-content {
+        min-height: 400px;
+    }
+}
 
 .about-me__info {
     display: flex;
     justify-content: space-between;
+    flex: wrap;
+}
+
+@media screen and (max-width:560px) {
+    .about-me__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .about-skills {
@@ -47,4 +65,10 @@
     height: 170px;
 }
 
+@media screen and (max-width: 820px) {
+    .facts__rear-details {
+        display: none;
+    }
+}
 /*facts-END*/
+
