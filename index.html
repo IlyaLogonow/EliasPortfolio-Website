@@ -23,7 +23,7 @@
                     <li class="main-nav__item"><a class="main-nav__link menu__item active-link" href="#"> <span>#</span>home</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="project.html"> <span>#</span>works</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="about-me.html"> <span>#</span>about-me</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link menu__item" href="contacts.html"> <span>#</span>contacts</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link menu__item" id="myBtn" href="#"> <span>#</span>contacts</a></li>
                   </ul>
                 </nav>
                 <div class="dropdown">
@@ -197,6 +197,31 @@
           </div>
         </div>
       </footer>
+      <div class="mobal-wrapper">
+        <div class="modal" id="myModal">
+          <div class="modal-content">
+            <form action="#" method="post" target="_blank">
+              <h2 class="visually-hidden-title">Form to fill out</h2>
+              <fieldset class="hystmodal-mobal name-mail">
+                <legend class="visually-hidden-title">Name and Email</legend>
+                <input type="name" name="name" placeholder="Name" id="name" required>
+                <input type="email" name="mail" placeholder="Email" id="email" required>
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-title">
+                <legend class="visually-hidden-title">Title</legend>
+                <input type="text" name="text" placeholder="Title" id="title">
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-message">
+                <legend class="visually-hidden-title">Message</legend>
+                <input type="text" name="text" placeholder="Message" id="message">
+              </fieldset>
+              <button type="submit">Send</button>
+            </form>
+            <button class="close">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
