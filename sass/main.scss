@@ -129,9 +129,14 @@ ul {
     color: $hover-color !important;
 }
 
+.visually-hidden-title {
+    display: none;
+}
+
 @import 'block/header.scss';
 @import 'block/content.scss';
 @import 'block/projects.scss';
 @import 'block/about-me.scss';
 @import 'block/contacts.scss';
 @import 'block/footer.scss';
+@import 'block/hystmodal.scss';

@@ -23,7 +23,7 @@
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="index.html"> <span>#</span>home</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="project.html"> <span>#</span>works</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item active-link" href="#"> <span>#</span>about-me</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link menu__item" href="#"> <span>#</span>contacts</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link menu__item" id="myBtn" href="#"> <span>#</span>contacts</a></li>
                   </ul>
                 </nav>
                 <div class="dropdown">
@@ -41,6 +41,7 @@
             <h1 class="project-title"><span>/</span>about-me</h1><span class="projects-span">Who am i?</span>
           </div>
           <section class="about-me about-me-content">
+            <h3 class="visually-hidden-title">about-me</h3>
             <div class="about-me__inf p-info">
               <p>Hello, i’m Elias!</p>
               <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. </p>
@@ -135,6 +136,30 @@
           </div>
         </div>
       </footer>
+      <div class="mobal-wrapper">
+        <div class="modal" id="myModal">
+          <div class="modal-content">
+            <form action="#" method="post" target="_blank">
+              <h2 class="visually-hidden-title">Form to fill out</h2>
+              <fieldset class="hystmodal-mobal name-mail">
+                <legend class="visually-hidden-title">Name and Email</legend>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+                <input type="email" name="mail" placeholder="Email" id="email" required>
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-title">
+                <legend class="visually-hidden-title">Title</legend>
+                <input type="text" name="text" placeholder="Title" id="title">
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-message">
+                <legend class="visually-hidden-title">Message</legend>
+                <input type="text" name="text" placeholder="Message" id="message">
+              </fieldset>
+              <button type="submit">Send</button>
+            </form>
+            <button class="close">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>

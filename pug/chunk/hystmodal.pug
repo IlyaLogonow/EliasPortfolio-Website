@@ -1,0 +1,20 @@
+.mobal-wrapper
+    #myModal.modal
+        .modal-content
+            form(action="#" method="post" target="_blank")
+                h2.visually-hidden-title Form to fill out
+                fieldset.hystmodal-mobal.name-mail
+                    legend.visually-hidden-title Name and Email
+                    input(type="name" name="name" placeholder="Name" id='name' required)
+                    input(type="email" name="mail" placeholder="Email" id='email' required)
+                fieldset.hystmodal-mobal.fieldset-title
+                    legend.visually-hidden-title Title
+                    input(type="text" name="text" placeholder="Title" id="title")
+                fieldset.hystmodal-mobal.fieldset-message
+                    legend.visually-hidden-title Message
+                    input(type="text" name="text" placeholder="Message" id="message")
+                button(type="submit") Send
+            button.close Close
+
+
+

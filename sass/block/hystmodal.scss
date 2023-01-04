@@ -1,0 +1,85 @@
+.mobal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; 
+    top: 150px;
+    min-width: 569px; 
+    min-height: 342px; 
+    overflow: auto; 
+    background-color: $background; 
+    border: 1px solid #888;
+    box-shadow: 0 11px 10px -2px #676767
+}
+
+.modal-content {
+    position: relative;
+    max-width: 505px;
+    margin: 0px auto;
+
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.hystmodal-mobal:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.hystmodal-mobal input {
+    border: 1px solid $hover-color;
+    background: transparent;
+
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px;
+}
+
+.name-mail input {
+    min-width: 244.49px;
+    min-height: 37px;
+}
+.fieldset-title input {
+    width: 100%;
+    min-height: 37px;
+}
+.fieldset-message input {
+    width: 100%;
+    min-height: 119px;
+}
+
+.modal-content button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $main-color;
+    cursor: pointer;
+    transition: 0.8s;
+
+    background: transparent;
+    border: 1px solid $complementary-color;
+    padding: 6px 16px;
+}
+.modal-content button:hover {
+    background-color: $complementary-color;
+}
+
+.close {
+    position: absolute;
+    top: 240px;
+    right: 0px;
+    z-index: 200;
+}
+ 

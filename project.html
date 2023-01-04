@@ -23,7 +23,7 @@
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="index.html"> <span>#</span>home</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item active-link" href="#"> <span>#</span>works</a></li>
                     <li class="main-nav__item"><a class="main-nav__link menu__item" href="about-me.html"> <span>#</span>about-me</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link menu__item" href="#"> <span>#</span>contacts</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link menu__item" id="myBtn" href="#"> <span>#</span>contacts</a></li>
                   </ul>
                 </nav>
                 <div class="dropdown">
@@ -55,7 +55,8 @@
                   <p class="projects-cart__text">Minecraft servers hosting </p><a class="projects-cart__link link-arrow" href="#">Live</a>
                 </div>
               </div>
-              <div class="projects-cart"><img class="projects-cart__img" src="img/KahootAnswersViewer.png">
+              <div class="projects-cart">
+                <img class="projects-cart__img" src="img/KahootAnswersViewer.png" alt="Kahoot Answers Viewer">
                 <ul class="projects-cart__list">
                   <li class="projects-cart__item">CSS</li>
                   <li class="projects-cart__item">Express</li>
@@ -216,6 +217,30 @@
           </div>
         </div>
       </footer>
+      <div class="mobal-wrapper">
+        <div class="modal" id="myModal">
+          <div class="modal-content">
+            <form action="#" method="post" target="_blank">
+              <h2 class="visually-hidden-title">Form to fill out</h2>
+              <fieldset class="hystmodal-mobal name-mail">
+                <legend class="visually-hidden-title">Name and Email</legend>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+                <input type="email" name="mail" placeholder="Email" id="email" required>
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-title">
+                <legend class="visually-hidden-title">Title</legend>
+                <input type="text" name="text" placeholder="Title" id="title">
+              </fieldset>
+              <fieldset class="hystmodal-mobal fieldset-message">
+                <legend class="visually-hidden-title">Message</legend>
+                <input type="text" name="text" placeholder="Message" id="message">
+              </fieldset>
+              <button type="submit">Send</button>
+            </form>
+            <button class="close">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>
